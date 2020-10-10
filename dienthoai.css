@@ -1,0 +1,29 @@
+body{
+    font-family: sans-serif;
+}
+.logo{
+   background-color: lightcoral;
+   padding: 15px 30px;
+}
+.logo1{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+.logo2{
+    font-size: 25px;
+    font-weight: 800;
+    color:white;
+    margin-top: 0px;
+}
+.anh1{
+    display: table;
+    clear: both;
+}
+.anh1 div{
+    width: 23%;
+    float: left;
+    border: 1px solid white;
+    padding: 10px;
+}
+
