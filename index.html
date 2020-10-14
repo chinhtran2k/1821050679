@@ -17,17 +17,30 @@
                 <li class="link1"><a href="C:/Users/PC/web/dientu.html">Điện tử </a>
                 <div class="links1">
                     <a href="C:/Users/PC/1821050679/dienthoai.html">điện thoại</a>
-                    <a href="C:/Users/PC/Documents/maytinh.html">máy tính</a>
+                    <a href="C:/Users/PC/1821050679/maytinh.html">máy tính</a>
                 </div></li>
-                <li class="link1"><a href="#">Thời trang </a>
+                <li class="link1"><a href="C:/Users/PC/1821050679/thoitrang.html">Thời trang </a>
                 <div class="links1">
-                    <a href="#">quần,áo</a>
-                    <a href="#">giầy,dép</a>
+                    <a href="C:/Users/PC/1821050679/quanao.html">quần,áo</a>
+                    <a href="C:/Users/PC/1821050679/giaydep.html">giầy,dép</a>
                 </div></li>
-                <li class="link1"><a href="#">Sách</a>
+                <li class="link1"><a href="C:/Users/PC/1821050679/sach.html">Sách</a>
             </ul>
         </div>
         </section>
+        <section id="home" class="hideable-section">
         <p>Dễ dàng mua sắm ở khắp mọi nơi</p>
+        </section>
+        <script>
+            $(function(){
+                $('section div ul li a').click(function() {
+                    var $section =$('#'+$(this).data('section'));
+                    if(!$section.is('!:visible')){
+                        $('.hideable-section').hide();
+                        $section.fadeIn();
+                    }
+                });
+            });
+        </script>
     </body>
 </html>
